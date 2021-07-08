@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script src="https://kit.fontawesome.com/a15138ce98.js" crossorigin="anonymous"></script>
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <!-- Heading Section Starts -->
+    <section class="heading-section">
+      <div class="heading">
+        <h1 class="active toDoList" id="toDoList" onclick="hideForm()"><b>To-Do List</b></h1>
+        <h1 class="addToDo" id="addToDo" onclick="showForm()"><b>Add To-Do</b></h1>
+      </div>
+    </section>
+    <!-- Heading Section Ends -->
+
+    <!-- Form Section Starts -->
+    <section class="form-section" id="formInput">
+      <form class="form" id="form-1">
+        <div class="form-input">
+          <input type="text" id="toDoName" placeholder="To-Do Name" />
+        </div>
+        <br />
+
+        <div class="form-input">
+          <textarea name="Note" id="note" cols="30" rows="3" placeholder="Type your note..."></textarea>
+        </div>
+        <br />
+
+        <div class="form-input">
+          <label for="From">From</label><br>
+          <input type="date" id="dateFrom"/>
+          <input type="time" id="timeFrom">
+        </div>
+        <br />
+        <div class="form-input">
+          <label for="To">To</label><br>
+          <input type="date" id="dateTo"/>
+          <input type="time" id="timeTo">
+        </div>
+        <br />
+
+        <div class="form-input">
+          <label for="Attention">Attention</label><br>
+          <select name="Attention" id="attention">
+            <option value="Immediately">Immediately</option>
+            <option value="Soon">Soon</option>
+            <option value="Later">Later</option>
+          </select>
+        </div>
+        <br />
+        <button class="btn" type="submit">Create</button>
+      </form>
+    </section>
+    <!-- Form Section Ends -->
+
+    <!-- List Section Starts -->
+    <div class="list-content">
+      <h1 id="content"><span class="fas fa-list-ul"></span> To-Do Lists:</h1></span>
+      <ul id="lists"></ul>
+    </div>
+
+    <section class="list-section">
+      <p class="intro-message" id="intro-message">
+        <i>no current list, please click on <span>Add To-Do</span> to create one</i>
+      </p>
+    </section>
+    <!-- List Section Ends -->
+
+    <script src="js/scripts.js"></script>
+    <script src="js/UI.js"></script>
+  </body>
+</html>

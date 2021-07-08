@@ -1,0 +1,140 @@
+/* Global Styles Starts */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+li {
+  box-shadow: var(--outer-shadow);
+  width: 90%;
+  padding: 30px;
+}
+
+:root {
+  --primary-color: rgb(184, 115, 184);
+  --background-color: #eff0f4;
+  --primary-color-1: crimson;
+  --body-color: rgb(49, 48, 48);
+  --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+}
+
+.btn {
+  padding: 6px 15px;
+  background: transparent;
+  box-shadow: var(--outer-shadow);
+  border: none;
+  outline: none;
+  font-size: 19px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--primary-color-1);
+}
+
+.btn:hover {
+  box-shadow: var(--inner-shadow);
+}
+
+.name {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.date {
+  font-size: 20px;
+  margin-left: 30px;
+}
+/* Global Styles Ends */
+
+/* Heading Section Starts */
+.heading-section h1 {
+  margin-top: 10px;
+  margin-left: 5px;
+  color: black;
+  box-shadow: var(--outer-shadow);
+  margin-right: auto;
+  display: inline-block;
+  padding: 8px 8px;
+  border-radius: 20px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.heading-section h1:hover {
+  box-shadow: var(--inner-shadow);
+}
+
+.heading-section .toDoList.active {
+  color: var(--primary-color-1);
+}
+/* Heading Section Ends */
+
+/* Listing Section Starts */
+.list-section {
+  margin: auto;
+  text-align: center;
+  margin-top: 206px;
+  margin-bottom: auto;
+  display: block;
+  width: 40%;
+}
+
+.list-section h1 {
+  margin: 3px;
+}
+
+.list-section .intro-message {
+  font-size: 17px;
+  color: var(--body-color);
+}
+
+.list-section .intro-message span {
+  color: var(--primary-color);
+}
+
+.list-content h1 {
+  margin: 4px;
+}
+
+.list-content span {
+  color: var(--primary-color);
+}
+
+.toDoList {
+  margin: 15px;
+}
+
+
+/* Listing Section Ends */
+
+/* Form Section Starts */
+.form-section {
+  margin-top: 50px;
+  text-align: center;
+  display: none;
+}
+
+.form-section .form-input input, textarea, select{
+  padding: 8px;
+  outline: none;
+  box-shadow: var(--outer-shadow);
+  border: none;
+  resize: none;
+  border-radius: 8px;
+}
+
+.form-section .form-input label {
+  color: var(--primary-color);
+}
+
+.form-section .form-input select {
+  padding: 5px;
+  color: var(--primary-color-1);
+}
+/* Form Section Ends*/
